@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <link href="includes/css/nytimesdemo.css" rel="stylesheet" type="text/css" />
+        <link href="includes/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="includes/css/main.css" rel="stylesheet" type="text/css" />
+        <script src="includes/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="includes/js/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <section>
+            <h2>NYTimes Best Seller Books</h2>
+            <p class="invis" data-hook="last-date">As of May 28th, 2017</p>
+
+            <div class="loading-container" data-hook="loading">
+                <i class="fa fa-spinner fa-spin"></i>
+                <p>Please wait while we get the latest best selling books.</p>
+            </div>
+
+            <div class="invis" data-hook="success">
+                <i class="fa fa-check"></i> Success!
+            </div>
+        </section>
+
+        <section class="book-genres hidden" data-hook="book-genres">
+            <div class="template">
+                <div class="list-books hidden invis template" data-hook="list-book-template">
+
+                </div>
+
+                <div class="book-item template" data-hook="book-item-template">
+                    <img data-hook="image" src="https://s1.nyt.com/du/books/images/9780399593581.jpg" />
+                    <div>
+                        <span data-hook="title">Title</span>
+                        <span data-hook="author">By Author</span>
+                        <p data-hook="description">Description</p>
+                        <span>Buy it now:</span>
+                        <div>
+                            <i data-hook="amazon" class="fa fa-amazon" title="Buy on Amazon"></i>
+                            <i data-hook="local-booksellers" class="fa fa-book" title="Buy from Local Booksellers"></i>
+                            <img data-hook="barnes-and-noble" class="shop-icon" src="http://crazythingsparentstext.com/images/iconbn.png" title="Buy on Barnes & Noble" />
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="template">
+                    <li data-hook="list-item-template"></li>
+                </ul>
+            </div>
+
+            <h3>Click on a genre below to see some best sellers.</h3>
+
+            <div class="list-genres" data-hook="list-genres">
+                <ul>
+                    <li class="selected">Combined print & e-fiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                    <li>Combined print & e-book nonfiction</li>
+                </ul>
+            </div>
+
+            <h3 data-hook="genre-header">Combined Print & e-fiction</h3>
+
+            <div data-hook="book-lists">
+                <div class="list-books hidden" data-hook="list-books-704">
+                    <div class="book-item">
+                        <img src="https://s1.nyt.com/du/books/images/9780735211216.jpg" />
+                        <div>
+                            <span>INTO THE WATER</span>
+                            <span>By Paula Hawkins</span>
+                            <p>In this psychological thriller by the author of "The Girl on the Train," women are found drowned in a river in an English town.</p>
+                            <span>Buy it now:</span>
+                            <div>
+                                <i class="fa fa-amazon" title="Buy on Amazon"></i>
+                                <i class="fa fa-book" title="Buy from Local Booksellers"></i>
+                                <img class="shop-icon" src="http://crazythingsparentstext.com/images/iconbn.png" title="Buy on Barnes & Noble" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://s1.nyt.com/du/books/images/A00B01L9WY8PU.jpg" />
+                        <div>
+                            <span>SURRENDER</span>
+                            <span>By Helen Hardt</span>
+                            <p>More Steel family secrets are revealed as Melanie gains confidence in her love for guilt-plagued Jonah.</p>
+                            <span>Buy it now:</span>
+                            <div>
+                                <i class="fa fa-amazon" title="Buy on Amazon"></i>
+                                <i class="fa fa-book" title="Buy from Local Booksellers"></i>
+                                <img class="shop-icon" src="http://crazythingsparentstext.com/images/iconbn.png" title="Buy on Barnes & Noble" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://s1.nyt.com/du/books/images/9780399593581.jpg" />
+                        <div>
+                            <span>NO MIDDLE NAME</span>
+                            <span>By Lee Child</span>
+                            <p>A complete collection of Jack Reacher stories.</p>
+                            <span>Buy it now:</span>
+                            <div>
+                                <i class="fa fa-amazon" title="Buy on Amazon"></i>
+                                <i class="fa fa-book" title="Buy from Local Booksellers"></i>
+                                <img class="shop-icon" src="http://crazythingsparentstext.com/images/iconbn.png" title="Buy on Barnes & Noble" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="includes/js/demo.js" type="text/javascript"></script>
+    </body>
+</html>
