@@ -59,8 +59,6 @@ function parseBooksJSON(data) {
         _listGenres.append(document.createElement("ul"));
         _bookLists.empty();
 
-        console.log(data["results"]);
-
         $.each(data["results"].lists, function (key, value) {
             _listGenres.find("ul").append(_listItemTemplate.clone().text(value["display_name"]).attr("data-id", value["list_id"]));
 
@@ -94,11 +92,11 @@ function parseBooksJSON(data) {
                                     window.location = buyValue["url"];
                                 });
                             }
-                            else if (buyValue["name"] === "Barnes and Noble") {
-                                _bookItem.find("[data-hook='barnes-and-noble']").on("click", function () {
-                                    window.location = buyValue["url"];
-                                });
-                            }
+                            // else if (buyValue["name"] === "Barnes and Noble") {
+                            //     _bookItem.find("[data-hook='barnes-and-noble']").on("click", function () {
+                            //         window.location = buyValue["url"];
+                            //     });
+                            // }
                         }
                     });
 
